@@ -1,16 +1,83 @@
-# React + Vite
+# TODO App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, mobile-first Todo app built with React. Designed from a Figma prototype and deployed on Netlify.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it does
 
-## React Compiler
+- **Add tasks** — open the modal, enter a name, optional description, and an optional deadline
+- **Complete tasks** — tap the checkbox to mark a task done (or undo it)
+- **Delete tasks** — tap the trash icon; the task animates out before disappearing
+- **Filter tasks** — switch between All, Active, and Completed tabs
+- **Search tasks** — type in the search bar to filter by name or description
+- **Progress bar** — tracks how many tasks you've completed out of the total
+- **Overdue badges** — any task past its deadline shows a red "Overdue" pill
+- **Persists on refresh** — tasks are saved to your browser's localStorage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev) — UI
+- [Vite](https://vitejs.dev) — build tool and dev server
+- Plain CSS — no CSS framework
+
+---
+
+## How to run it locally
+
+You need [Node.js](https://nodejs.org) installed (version 18 or higher).
+
+**1. Clone the repo**
+
+```bash
+git clone https://github.com/Trxsta/TODO-App.git
+cd TODO-App
+```
+
+**2. Install dependencies**
+
+```bash
+npm install
+```
+
+**3. Start the dev server**
+
+```bash
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## How to build for production
+
+```bash
+npm run build
+```
+
+This creates a `dist/` folder with the compiled app ready to deploy.
+
+---
+
+## How to deploy on Netlify
+
+1. Go to [netlify.com](https://netlify.com) and log in
+2. Click **Add new site → Import from Git**
+3. Connect your GitHub and select this repo
+4. Netlify will auto-detect the settings from `netlify.toml` — just click **Deploy**
+
+The build command is `npm run build` and the publish folder is `dist`.
+
+---
+
+## Project structure
+
+```
+src/
+  App.jsx      — all components and logic
+  App.css      — all styles
+  index.css    — base reset
+```
