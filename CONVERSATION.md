@@ -187,3 +187,7 @@ This is a record of the iterative conversation used to design and build this app
 | `netlify.toml` | Netlify build config |
 | `README.md` | Setup and usage guide |
 | `CONVERSATION.md` | This file |
+
+## Summary
+
+This transcript shows how the app evolved through a structured, step-by-step build process starting from a Figma prototype and turning it into a fully functional React Todo app. AI was heavily used for scaffolding components, wiring up state logic, and iterating quickly on features like task CRUD, filtering, animations, and localStorage persistence. It also helped handle real-world dev friction like port conflicts, GitHub auth issues, and edge-case bugs, but the key takeaway is that most of the progress came from continuously reviewing AI output, correcting assumptions, and making deliberate decisions about what complexity was actually worth keeping.
